@@ -1,0 +1,239 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html::-webkit-scrollbar {display: none;}
+
+/*  HEADER   */
+header {
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #f4accb;
+}
+
+body {
+    background-color: #f3f3f3;
+}
+
+.logo {
+    height: 100%;
+    padding: 10px;
+    float:left;
+}
+
+a:active, a:hover, a:visited, a{
+    text-decoration: none;
+    color: black;
+}
+
+.logo span {
+    float: right;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+
+.open {
+    float:right;
+    height: 60px;
+    padding: 10px;
+    position: relative;
+    transition: 0.5s;
+}
+
+.buy {
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px auto;
+    border-radius: 3px;
+    background: rgb(64,199,129);
+    box-shadow: 0 -3px rgb(53,167,110) inset;
+    transition: 0.2s;
+    display: none;
+    cursor: pointer;
+}
+
+.cart-content {
+    display: none;
+    position: absolute;
+    background-color: #f3f3f3;
+    color: black;
+    width: 200px;
+    box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    margin-left: -160px;
+}
+
+.cart-item {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: 'Source Sans Pro', sans-serif;
+    
+}
+
+.cart-content .cart-item:hover {
+    background-color: lightblue;
+}
+
+.open:hover .cart-content, .open:hover .buy {
+    display: block;
+}
+
+.open:hover {
+    background-color: lightblue;
+}
+
+
+/*  MENU   */
+.menu {
+    list-style: none;
+    margin: 40px 0 40px;
+    padding: 25px 0 5px;
+    text-align: center;
+    background: #f3f3f3;
+}
+.menu li {display: inline-block;}
+.menu li:after {
+    content: "|";
+    color: #f4accb;
+    display: inline-block;
+    vertical-align:top;
+}
+.menu li:last-child:after {content: none;}
+.menu a {
+    text-decoration: none;
+    font-family: bahnschrift, 'Open Sans', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+.menu a.current, .menu a:hover{color: #f4accb; text-decoration: underline;}
+.menu a:after {   /* убрал .menu a:before*/
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: #f4accb;
+    transition: .8s;
+}
+@media (max-width: 550px) {
+    .menu {padding-top: 0;}
+    .menu li {display: block;}
+    .menu li:after {content: ""; text-decoration: none;}
+    .menu a {
+      padding: 25px 0 20px; 
+      margin: 0 30px;
+    }
+}
+
+h1 {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 20px 0 20px;
+    color: #f4accb;
+}
+
+/*  CARDS   */
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 35px;
+    width: 100%;
+    height: 100%;
+    padding: 0 5px;
+    background-color: #f3f3f3;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    text-align: center;
+    background-color: white;
+    font-family: bahnschrift, 'Open Sans', sans-serif;
+    position: relative;
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.card img {
+    width: 100%;
+}
+
+h3 {
+    color: black;
+}
+
+h3 p {
+    padding: 4px;
+    font-size: 14px;
+    color: white;
+}
+
+.price {
+    color: black;
+    font-size: 18px;
+}
+
+.card button {
+    border: none;
+    outline: 0;
+    padding: 10px;
+    color: black;
+    background-color: #f4accb;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+.card button:active {
+    transition: 0.2s;
+    background-color: #c98fa8;
+}
+
+footer {
+    background-color: #f4accb;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}
+
+.gift {
+    background-color: #f4accb;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 20px;
+}

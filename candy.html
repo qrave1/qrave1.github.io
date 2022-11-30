@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Alley</title>
+    <link rel="icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="assets/css/candyCSS.css">
+</head>
+<body>
+
+    <header>
+        <a href="index.html">
+            <div class="logo">
+                <img src="assets/images/candy.svg" alt="" width="40px" height="40px">
+                <span>Candy Alley</span>
+            </div>
+        </a>
+
+        <div class="open">
+            <img src="assets/images/basket.svg" alt="" width="35px" height="35px">
+            <div class="cart-content">
+                <div class="cart-item">Корзина пустая</div>
+            </div>
+        </div>
+
+    </header>
+
+    <ul class="menu">
+        <li><a href="candy.html">Сладости</a></li>
+        <li><a href="drink.html">Напитки</a></li>
+        <li><a href="snack.html">Снэки</a></li>
+        <li><a href="gift.html">Подарки</a></li>
+    </ul>
+
+    <h1>Сладости</h1>
+
+    <section>
+        <div class="card">
+            <img src="assets/images/Cards/candy/hubba_bubba.jpg" alt="">
+            <div class="card-info">
+                <h3>Hubba Bubba</h3>
+                <p class="price">380 руб.</p>
+                <button class="to-cart" data-name="Hubba Bubba" data-price="380" onclick="butt(this.getAttribute('data-name'), this.getAttribute('data-price'));">В корзину</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/images/Cards/candy/jelly_belly.jpg" alt="">
+            <div class="card-info">
+                <h3>Jelly Belly</h3>
+                <p class="price">360 руб.</p>
+                <button class="to-cart" data-name="Jelly Belly" data-price="360" onclick="butt(this.getAttribute('data-name'), this.getAttribute('data-price'));">В корзину</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/images/Cards/candy/juicy_fruit.jpg" alt="">
+            <div class="card-info">
+                <h3>Juicy Fruit</h3>
+                <p class="price">260 руб.</p>
+                <button class="to-cart" data-name="Juicy Fruit" data-price="260" onclick="butt(this.getAttribute('data-name'), this.getAttribute('data-price'));">В корзину</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="assets/images/Cards/candy/m&m's.jpg" alt="">
+            <div class="card-info">
+                <h3>M&M's</h3>
+                <p class="price">270 руб.</p>
+                <button class="to-cart" data-name="M&M's" data-price="270" onclick="butt(this.getAttribute('data-name'), this.getAttribute('data-price'));">В корзину</button>
+            </div>
+        </div><div class="card">
+            <img src="assets/images/Cards/candy/marukawa.jpg" alt="">
+            <div class="card-info">
+                <h3>Marukawa</h3>
+                <p class="price">180 руб.</p>
+                <button class="to-cart" data-name="Marukawa" data-price="180" onclick="butt(this.getAttribute('data-name'), this.getAttribute('data-price'));">В корзину</button>
+            </div>
+        </div><div class="card">
+            <img src="assets/images/Cards/candy/mini_milka.jpg" alt="">
+            <div class="card-info">
+                <h3>Milka cookies</h3>
+                <p class="price">240 руб.</p>
+                <button class="to-cart" data-name="Milka cookies" data-price="240" onclick="butt(this.getAttribute('data-name'), this.getAttribute('data-price'));">В корзину</button>
+            </div>
+        </div><div class="card">
+            <img src="assets/images/Cards/candy/morinaga.jpg" alt="">
+            <div class="card-info">
+                <h3>Morinaga</h3>
+                <p class="price">320 руб.</p>
+                <button class="to-cart" data-name="Morinaga" data-price="320" onclick="butt(this.getAttribute('data-name'), this.getAttribute('data-price'));">В корзину</button>
+            </div>
+        </div>
+        </div><div class="card">
+            <img src="assets/images/Cards/candy/oreo.jpg" alt="">
+            <div class="card-info">
+                <h3>Oreo</h3>
+                <p class="price">230 руб.</p>
+                <button class="to-cart" data-name="Oreo" data-price="230" onclick="butt(this.getAttribute('data-name'), this.getAttribute('data-price'));">В корзину</button>
+            </div>
+        </div>
+        </div><div class="card">
+            <img src="assets/images/Cards/candy/shock2shock.jpg" alt="">
+            <div class="card-info">
+                <h3>Shock 2 Shock</h3>
+                <p class="price">570 руб.</p>
+                <button class="to-cart" data-name="Shock 2 Shock" data-price="570" onclick="butt(this.getAttribute('data-name'), this.getAttribute('data-price'));">В корзину</button>
+            </div>
+        </div>
+        </div><div class="card">
+            <img src="assets/images/Cards/candy/wispa.jpg" alt="">
+            <div class="card-info">
+                <h3>Wispa</h3>
+                <p class="price">200 руб.</p>
+                <button class="to-cart" data-name="Wispa" data-price="200" onclick="butt(this.getAttribute('data-name'), this.getAttribute('data-price'));">В корзину</button>
+            </div>
+        </div>
+    </section>
+
+    <br>
+    <br>
+    <footer>
+        Адрес: 
+        <br>
+        Москва, Пр. Вернадского, д.78
+        <br>
+        <br>
+        Copyright &copy; 2022 - Смирнов А.Е.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
